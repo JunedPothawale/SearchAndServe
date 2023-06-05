@@ -1,0 +1,113 @@
+<div class="h-[100vh] w-100vw flex justify-center items-center text-white  ">
+    <div class="map flex justify-center items-center text-black h-[100vh] w-[50vw] ">
+        <iframe class="rounded-2xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60512.23235936263!2d73.90562154863281!3d18.573384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c38275a673c5%3A0x368b6a8fa28346d!2sG%20H%20RAISONI%20College%20OF%20ENGINEERING%20AND%20Management%2C%20PUNE!5e0!3m2!1sen!2sin!4v1685956101660!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="login text-black flex justify-center items-center h-[100vh] w-[50vw]">
+        <div class="login_wapper flex justify-center items-center flex-col h-[100%] w-[70%] rounded-2xl">
+            <div class="logo">
+                <img src="../../assets/assets/img/logo.svg" class="h-20 w-[20rem]">
+            </div>
+            <div class="main_login_form w-[90%]">
+                <div class="switcher flex justify-center">
+                    <h1 class="text-2xl font-mono text-black  hover:text-red-600"> <a routerLink="/login">Login</a>
+                    </h1>
+                    <span class="text-2xl mx-2">/</span>
+                    <h1 class="text-2xl font-mono text-black hover:text-red-600"><a routerLink="/register">Sign Up</a>
+                    </h1>
+                </div>
+
+                <form class="mt-6">
+                    <div class="flex ">
+                        <div class="flex-1">
+                            <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                First Name</label>
+                            <input type="text" id="fname"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="John" required>
+                        </div>
+                        <div class="flex-1 ml-4">
+                            <label for="lname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                Last Name</label>
+                            <input type="text" id="lname"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="John" required>
+                        </div>
+                    </div>
+
+                    <div class="my-6">
+                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                            Phone Number </label>
+                        <input type="tel" pattern="+91[7-9]{1}[0-9]{9}" id="phone"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="+919123456789" required>
+                    </div>
+
+                    <div class="my-6">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                            email</label>
+                        <input type="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                            password</label>
+                        <div class="flex justify-end">
+                            <input id="password" type="text"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required>
+                                <div class="absolute leading-5 mr-3" (click)="showPassword()">
+                                    <i class="fa fa-eye text-3xl text-gray-600" id="eye_open" aria-hidden="true"></i>
+                                    <i class="fa fa-eye-slash text-3xl text-gray-600 hidden" id="eye_close" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <div class="flex items-center h-5">
+                            <input id="remember" type="checkbox" value=""
+                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                required>
+                        </div>
+                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
+                            me</label>
+                    </div>
+                    <button type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign Up</button>
+                </form>
+                <div>
+
+                    <div
+                        class="h-100 w-[100%] bg-gray-800 text-white p-2 rounded-xl mt-6 cursor-pointer flex items-center hover:bg-gray-600 transition-all">
+                        <button type="button" class="flex justify-center items-center" (click)="SignUpWithGoogle()">
+                            <svg class="h-10 w-100" enable-background="new 0 0 533.5 544.3" version="1.1"
+                                viewBox="0 0 533.5 544.3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                xmlns:ns="&amp;ns_sfw;" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <path
+                                    d="m533.5 278.4c0-18.5-1.5-37.1-4.7-55.3h-256.7v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
+                                    style="fill:#4285f4" />
+                                <path
+                                    d="m272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3h-90.5v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"
+                                    style="fill:#34a853" />
+                                <path
+                                    d="M119.3,324.3c-11.4-33.8-11.4-70.4,0-104.2V150H28.9c-38.6,76.9-38.6,167.5,0,244.4L119.3,324.3z"
+                                    style="fill:#fbbc04" />
+                                <path
+                                    d="m272.1 107.7c38.8-0.6 76.3 14 104.4 40.8l77.7-77.7c-49.2-46.2-114.5-71.6-182.1-70.8-102.9 0-197 58-243.2 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"
+                                    style="fill:#ea4335" />
+                            </svg>
+                            <span class="ml-4 ">Sign Up With Google</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
